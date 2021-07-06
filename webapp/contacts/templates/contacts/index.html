@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Mon carnet d'adresse </title>
 </head>
 <body>
+<h1>Mon carnet d'adresse</h1>
 
+{% for user in users %}
+    <h2>{{user.full_name}}</h2>
+{% endfor %}
 </body>
 </html>
