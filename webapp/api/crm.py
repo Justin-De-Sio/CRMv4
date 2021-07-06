@@ -70,4 +70,9 @@ def get_all_users():
 
 
 if __name__ == "__main__":
-    martin = User("Martin", "Voisin")
+
+    for user in get_all_users():
+        print(user.full_name)
+        print(user.address)
+        print(user.phone_number)
+        print("--------")

@@ -11,6 +11,12 @@
             "last_name": "Smith",
             "phone_number": "0123456789",
             "address": "1 rue du chemin, 75015, Paris"
+        },
+        "3": {
+            "first_name": "Justin",
+            "last_name": "De Sio",
+            "phone_number": "0685459868",
+            "address": "7 rue am\u00f4ne vieille"
         }
     }
 }
