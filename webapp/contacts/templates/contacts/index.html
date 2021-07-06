@@ -18,7 +18,12 @@
     {% if user.address %}
         <p>{{ user.address }}</p>
     {% endif %}
-
+    <form action="{% url 'delete-contact' %}" method="POST">
+        {% csrf_token %}
+        <input type="hidden" name="first_name" value="{{ user.first_name }}">
+        <input type="hidden" name="last_name" value="{{ user.last_name }}">
+        <button type="submit">Supprimer</button>
+    </form>
 {% endfor %}
 
 <form action="{% url 'add-contact' %}" method="POST">
